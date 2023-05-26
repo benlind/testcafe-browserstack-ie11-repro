@@ -1,0 +1,19 @@
+{
+  "name": "testcafe-browserstack-ie11-repro",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "node -r dotenv/config node_modules/.bin/testcafe 'browserstack:ie@11.0:Windows 10'",
+    "test:remote": "node -r dotenv/config node_modules/.bin/testcafe remote"
+  },
+  "author": "Ben Lind",
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "testcafe": "^2.6.0",
+    "testcafe-browser-provider-browserstack": "^1.14.2"
+  },
+  "dependencies": {
+    "dotenv": "^16.0.3"
+  }
+}
